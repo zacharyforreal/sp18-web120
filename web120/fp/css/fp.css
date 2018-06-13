@@ -1,0 +1,227 @@
+/* My WEB120 Final Project Styles */
+
+html {
+    background-color:#ccc;
+}
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+}
+
+aside.sub {
+    margin-right: 40px;
+}
+
+/*div.destination {
+    max-width: 66%;
+}
+/*h1>a {
+    text-decoration: none;
+    color:#000;
+}*/
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color:#000;   
+}
+
+h2.pageID {
+    margin-left:95px;
+    color:goldenrod;
+    
+}
+
+h3 {
+    color:goldenrod;
+}
+img.core {
+    max-width: 100%;
+}
+
+img.des {
+    max-width: 80%;
+    margin-left: 120px;
+}
+
+figcaption {
+    margin-left: 120px;
+}
+img.single {
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+
+section.consec {
+    width: auto;
+    margin-left: 15%;
+}
+p.my {
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-left:40px;
+}
+img.side {
+    margin-left:55px;
+    margin-right: 40px;
+}
+/*About how to adjust 'a' tag css-----https://www.w3schools.com/css/css_link.asp*/
+a {
+    text-decoration: none;
+    color:goldenrod;
+}
+
+.logo {
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 80%;
+}
+
+
+/* Hide Agenda View Calendar */
+div.embed-container.agenda-view {
+    display:none;
+}
+
+
+footer {
+	clear:both;
+     text-align:center;
+}
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:60%;
+		float:left;
+	}
+	
+     aside {	
+		width:34%;
+		float:right;
+	}
+			
+	
+    img.desktop {
+      		 float:left;
+       		width:50%;
+   	 }
+    
+    img.tablet, img.phone {
+       		 display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        	color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:50%;
+		float:left;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+            img.tablet {
+       		width:100%;
+           }
+    
+           img.phone, img.desktop {
+        		display:none;
+           } 
+    
+    /* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+          }
+  }
+/* Calendar Rules for Phone */
+@media all and (max-width:860px) {
+    
+    /* Show Agenda View Calendar */
+div.embed-container.agenda-view {
+    display:block;
+}
+    /* Hide Month View Calendar */
+div.embed-container.month-view {
+    display:none;
+}
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       		width:100%;
+    }
+    
+    img.tablet, img.desktop {
+        		display:none;
+    }  
+
+    img.des {
+        margin-left: auto;
+    }
+    
+    img.single {
+        margin-left: 40px;
+    }
+    
+    img.side {
+        margin-left: 40px;
+    }
+    figcaption {
+        margin-left: auto;
+    }
+    h2.pageID {
+        margin-left: auto;
+    }
+    p.sides {
+        margin-left: 20%;
+    }
+   
+}

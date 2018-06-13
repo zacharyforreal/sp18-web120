@@ -1,4 +1,3 @@
-<?php include 'portal-config.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +7,51 @@
 <meta charset="utf-8">
 <script src="https://use.fontawesome.com/6a71565c22.js"></script>
 <link rel="stylesheet" href="css/nav.css" />
-<link rel="stylesheet" href="css/portal.css" />
+<link rel="stylesheet" href="css/fp.css" />
 <link rel="stylesheet" href="css/form.css" />
+
+
+
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <!--<script src="http://s3.amazonaws.com/menumaker/menumaker.min.js" ></script> -->
+
+    <script src="js/script.js"></script>
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
 <!-- START WRAPPER -->
 <div class="wrapper">
 <header>
-  <h1><a href="index.php"><i class="logo fa fa-home"></i> Xing "Zack" Li SCC WEB120 Portal</a></h1>
-  <nav>
-    <ul class="topnav" id="myTopnav">
-      <li><a href="index.php" class="selected">Welcome</a></li>
-      <li><a href="big/index.php">Big</a></li>
-      <li><a href="aia.php">AIA</a></li>
-      <li><a href="flowchart.php">Flowchart</a></li>
-      <li><a href="fp/index.php">Final Project</a></li>
-      <li><a href="contactme.php">Contact Me</a></li>
-      <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
-    </ul>
+  <h1><a href="index.php"> Binyue Haitang Resort</a></h1>
+
+    
+    <!-- replace with new CSS Menumaker Nav -->
+       <nav>
+           <div id='cssmenu'>
+               <ul>
+                     <li><a href="../index.php"><span><i class="fa fa-fw fa-bank"></i> WEB120</span></a></li>
+                     <li><a href="index.php"><span><i class="fa fa-fw fa-home"></i> Homepage</span></a></li>
+
+                   <li><a href="destination.php"><span><i class="fa fa-fw fa fa-camera-retro"></i> Destination</span></a></li>
+
+                   <li><a href="room.php"><span><i class="fa fa-fw fa fa-hotel"></i>Rooms</span></a>
+                           </li>
+
+
+                     <li><a href="dining.php"><span><i class="fa fa-fw fa-chevron-down"></i> Dining</span></a>
+                        <ul>
+                           <li><a href="feast.php"><span><i class="fa fa-fw fa-cutlery"></i> Feast</span></a></li>
+                           <li><a href="fruit.php"><span><i class="fa fa-fw fa fa-apple"></i> Fruit</span></a></li>
+                           <li><a href="chef.php"><span><i class="fa fa-fw fa fa-thumbs-o-up"></i> Chef's Specials</span></a></li>
+                        </ul>
+                     </li>
+
+                     <li><a href="events.php"><span><i class="fa fa-fw fa fa-users"></i> Events</span></a></li>
+                    <li><a href="contacts.php"><span><i class="fa fa-fw fa-eye"></i> Contacts</span></a></li>
+                  </ul>
+            </div>
   </nav>
 </header>
-        
-<!-- START LEFT COL -->
-<section>
- <h2 class="pageID">Welcome</h2>
